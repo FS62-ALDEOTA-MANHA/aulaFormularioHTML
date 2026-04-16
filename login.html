@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Aula Formulário HTML</title>
+  <!-- CSS interno -->
+  <!-- <style>
+    body {
+      background-color: crimson;
+    }
+  </style> -->
+  <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
   <main>
+    <!-- CSS inline -->
+    <!-- <h1 style="color: cornflowerblue; font-size: 16px; font-Arial">Login</h1> -->
     <h1>Login</h1>
+  <form class="form-login">
+    <div>
+      <label class="block" for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+    </div>
+    <div>
+      <label class="block" for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+    </div>
+    <button type="submit">Entrar</button>
+  </form>
+  <p>Não possui cadastro? <a href="index.html">Cadastre-se aqui.</a></p>
   </main>
 </body>
 </html>
+
